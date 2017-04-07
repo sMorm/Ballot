@@ -1,0 +1,27 @@
+{
+  "name": "es6ballot",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "axios": "^0.16.0",
+    "better-react-spinkit": "^2.0.0-6",
+    "react": "^15.4.2",
+    "react-animate-on-change": "^0.2.1",
+    "react-dom": "^15.4.2",
+    "react-media": "^1.5.1",
+    "react-responsive": "^1.2.7",
+    "react-router": "^4.0.0",
+    "react-spinkit": "^2.1.1",
+    "shuffle-array": "^1.0.1"
+  },
+  "devDependencies": {
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

@@ -1,0 +1,10 @@
+.Loading-Container {
+    margin: 100px auto;
+}
+
+.Loading-Message {
+    color: salmon;
+    font-weight: 200;
+    font-size: 25px;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,115 @@
+.App-results {
+  display: inline-block;
+  list-style-type: none;
+  margin-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  animation: fadein 0.5s forwards;
+}
+
+.App-results li:hover, .App-results li:active {
+  animation: App-result-up 0.5s forwards;
+
+/*  -moz-transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);*/
+}
+
+.App-results li {
+  transform: translate(0%);
+  height: 250px;
+  width: 200px;
+  background-color: white;
+  padding: 40px;
+  -webkit-box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
+  box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
+  animation: App-result-down 0.5s forwards;
+}
+
+.App-results img {
+  height: 100px;
+  -webkit-box-shadow: 0px 1px 88px -1px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 1px 88px -1px rgba(0,0,0,0.15);
+  box-shadow: 0px 1px 88px -1px rgba(0,0,0,0.15);
+}
+
+.picture:hover {
+  -webkit-animation: imgscale 1s forwards;
+  -o-animation: imgscale 1s forwards;
+  animation: imgscale 1s forwards;
+}
+.App-results-name {
+  color: salmon;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 280px;
+}
+
+.App-results-address {
+  letter-spacing: 1px;
+}
+
+.App-results-address a {
+  text-decoration: none;
+  color: salmon;
+}
+
+.App-results-price {
+  color: salmon;
+  margin: 0px 0px;
+  font-size: 70px;
+  font-weight: 200;
+}
+.App-results-rating {
+  position: relative;
+  color: #aaaaaa;
+  z-index: -1;
+  margin: -65px 0px;
+  font-weight: 500;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+@keyframes App-result-up {
+  0% { transform: translateY(0);}
+  30% { transform: translateY(5%); }
+  100% { transform: translateY(-20%); }
+}
+
+@keyframes App-result-down {
+  0% { transform: translateY(-20%);}
+  50% { transform: translateY(0%); }
+  75% { transform: translateY(-5%); }
+  100% { transform: translateY(0%); }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

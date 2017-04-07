@@ -1,0 +1,73 @@
+.Form-container {
+  align-content: center;
+
+}
+.Form-input {
+  height: 50px;
+  width: 300px;
+  font-size: x-large;
+  text-align: center;
+  color: salmon;
+  margin: 0px 5px;
+  -webkit-box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
+  box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
+  border: none;
+  outline-color: salmon;
+  outline-width: 2px;
+  animation: fadein 1s forwards;
+}
+
+.Form-button {
+  background-color: salmon;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  height: 50px;
+  width: 150px;
+  padding: 5px;
+  margin-top: 40px;
+  font-size: large;
+  color: white;
+  -webkit-box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.1);
+  box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.1);
+  border: none;
+  outline-color: salmon;
+  outline-width: 2px;
+  cursor: pointer;
+
+}
+
+.Form-geolocation:hover img {
+  -webkit-animation: enlarge 1s forwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: enlarge 1s forwards; /* Firefox < 16 */
+  -ms-animation: enlarge 1s forwards; /* Internet Explorer */
+  -o-animation: enlarge 1s forwards; /* Opera < 12.1 */
+  animation: enlarge 1s forwards;
+
+}
+
+.Form-geolocation {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.GeoImg {
+  position: absolute;
+  height: 50px;
+  opacity: 1.0;
+  cursor: pointer;
+}
+
+
+@keyframes enlarge{
+  from { transform: scale(1.0); }
+  to   { transform: scale(1.05); }
+}
+
+@keyframes reduce {
+  from { transform: scale(1.05); }
+  to   { transform: scale(1.00); }
+}

@@ -1,0 +1,53 @@
+.Form-container {
+  align-content: center;
+
+}
+.GeoForm-input {
+  height: 50px;
+  width: 50%;
+  max-width: 400px;
+  font-size: x-large;
+  text-align: center;
+  color: salmon;
+  margin: 0px 5px;
+  -webkit-box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
+  box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
+  border: none;
+  outline-color: salmon;
+  outline-width: 2px;
+  animation: fadein 1.5s forwards;
+}
+
+.GeoForm-switch {
+  border: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.GeoFormImg {
+  position: absolute;
+  height: 50px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.GeoForm-switch:hover img{
+  -webkit-animation: enlarge 1s forwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: enlarge 1s forwards; /* Firefox < 16 */
+  -ms-animation: enlarge 1s forwards; /* Internet Explorer */
+  -o-animation: enlarge 1s forwards; /* Opera < 12.1 */
+  animation: enlarge 1s forwards;
+
+}
+
+
+@keyframes enlarge{
+  from { transform: scale(1.0); }
+  to   { transform: scale(1.05); }
+}
+
+@keyframes reduce {
+  from { transform: scale(1.05); }
+  to   { transform: scale(1.00); }
+}
