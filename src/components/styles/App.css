@@ -10,16 +10,9 @@ body {
           animation: fadein 2s;
 }
 
-
 .App-header {
   background-color: salmon  ;
   height: 100px;
-  padding: 20px;
-  color: white;
-}
-.App-header-mobile {
-  background-color: salmon  ;
-  height: 20px;
   padding: 20px;
   color: white;
 }
@@ -29,17 +22,35 @@ body {
   font-size: 50px;
 }
 
-.App-header-mobile h1{
-  font-size: 25px;
-  margin-top: -3px;
-}
-
 .App-intro p {
   font-size: x-large;
   letter-spacing: 1px;
   margin: 30px 20px;
   font-weight: 200;
   color: #414141;
+}
+.App-header-mobile {
+  background-color: salmon;
+  height: 20px;
+  padding: 10px;
+  color: white;
+}
+.App-header-mobile h1{
+  text-align: left;
+  font-size: 25px;
+  margin-top: -4px;
+}
+
+.App-header-mobile a{
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+.App-header-mobile p {
+  color: white;
+  text-align: right;
+  margin-top: -41px;
+  
 }
 
 

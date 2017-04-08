@@ -5,6 +5,7 @@ import axios from 'axios';
 import shuffle from 'shuffle-array';
 
 // Components
+import AppHeader from './AppHeader'
 import InputForm from './InputForm';
 import GeoForm from './GeoForm'
 import Loading from './Loading'
@@ -71,21 +72,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <MediaQuery query="(max-width: 750px)">
-          {matches => matches
-
-            ?<div className="App-header-mobile">
-              <h1>Ballot</h1>
-             </div>
-
-            :<div className="App-header">
-              <h1>Ballot</h1>
-             </div>
-          }
-        </MediaQuery>
-        <div className="App-intro">
-          <p>To get started, enter the type of food and your location</p>
-        </div>
+        <AppHeader />
 
         <MediaQuery query="(max-width: 750px)">
           {matches => matches 
@@ -107,7 +94,7 @@ class App extends Component {
             : (
             <div>
               {
-                  this.state.geoLocation === false
+                  !this.state.geoLocation
                   ?   <InputForm
                       name1="searchTerm" name2="searchLocation"
                       onSubmit={this.onSubmit}
@@ -132,11 +119,10 @@ class App extends Component {
           )}
         </MediaQuery>
         {
-          this.state.isLoading === true
+          this.state.isLoading
           ? <Loading />
           : <Result businesses={this.state.businesses} />
         }
-        
         <div className="TempBlock"></div>
       </div>
     );
