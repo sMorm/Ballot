@@ -16,12 +16,22 @@ body {
   height: 100px;
   padding: 20px;
   color: white;
-
+}
+.App-header-mobile {
+  background-color: salmon  ;
+  height: 20px;
+  padding: 20px;
+  color: white;
 }
 
 .App-header h1 {
   margin-top: 20px;
   font-size: 50px;
+}
+
+.App-header-mobile h1{
+  font-size: 25px;
+  margin-top: -3px;
 }
 
 .App-intro p {

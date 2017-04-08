@@ -7,12 +7,19 @@
   animation: fadein 0.5s forwards;
 }
 
+.App-results-mobile{
+  display:inline-block;
+  margin-top: 20px;
+  margin-right: 40px;
+  padding: 0px 10px;
+  list-style-type: none;
+}
+
 .App-results li:hover, .App-results li:active {
   animation: App-result-up 0.5s forwards;
-
-/*  -moz-transform: scale(1.02);
-  -webkit-transform: scale(1.02);
-  transform: scale(1.02);*/
+}
+.App-results-mobile li:hover, .App-results-mobile li:active {
+  animation: App-result-up 0.5s forwards;
 }
 
 .App-results li {
@@ -21,6 +28,17 @@
   width: 200px;
   background-color: white;
   padding: 40px;
+  -webkit-box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
+  box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
+  animation: App-result-down 0.5s forwards;
+}
+
+.App-results-mobile li {
+  height: 200px;
+  width: 150px;
+  background-color: white;
+  padding: 30px;
   -webkit-box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
   -moz-box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
   box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
@@ -47,6 +65,14 @@
   width: 280px;
 }
 
+.App-results-name-mobile {
+  color: salmon;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 215px;
+}
+
 .App-results-address {
   letter-spacing: 1px;
 }
@@ -62,6 +88,13 @@
   font-size: 70px;
   font-weight: 200;
 }
+
+.App-results-price-mobile {
+  color: salmon;
+  margin-top: -10px;
+  font-size: 50px;
+  font-weight: 200;
+}
 .App-results-rating {
   position: relative;
   color: #aaaaaa;
@@ -71,7 +104,15 @@
   font-size: 50px;
   letter-spacing: 5px;
 }
-
+.App-results-rating-mobile {
+  position: relative;
+  color: #aaaaaa;
+  z-index: -1;
+  margin: -35px 0px;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
 @keyframes App-result-up {
   0% { transform: translateY(0);}
   30% { transform: translateY(5%); }

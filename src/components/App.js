@@ -71,51 +71,63 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <h1>Ballot</h1>
-        </div>
+        <MediaQuery query="(max-width: 750px)">
+          {matches => matches
+
+            ?<div className="App-header-mobile">
+              <h1>Ballot</h1>
+             </div>
+
+            :<div className="App-header">
+              <h1>Ballot</h1>
+             </div>
+          }
+        </MediaQuery>
         <div className="App-intro">
           <p>To get started, enter the type of food and your location</p>
         </div>
 
         <MediaQuery query="(max-width: 750px)">
-          {matches => matches ? (
+          {matches => matches 
+            ? (
+              <div>
+                <InputForm
+                name1="searchTerm" name2="searchLocation"
+                onSubmit={this.onSubmit}
+                onChange={this.onChange}
+                useLocation={this.useLocation}
+                searchTerm={this.state.searchTerm}
+                searchLocation={this.state.searchLocation}
+                getLocation={this.state.geoLocation}
+                onMobile={true}
+                />
+              </div>
+            ) 
+            
+            : (
             <div>
-              <InputForm
-              name1="searchTerm" name2="searchLocation"
-              onSubmit={this.onSubmit}
-              onChange={this.onChange}
-              useLocation={this.useLocation}
-              searchTerm={this.state.searchTerm}
-              searchLocation={this.state.searchLocation}
-              getLocation={this.state.geoLocation}
-              onMobile={true}
-              />
-            </div>
-          ) : (
-            <div>
-            {
-                this.state.geoLocation === false
-                ?   <InputForm
-                    name1="searchTerm" name2="searchLocation"
-                    onSubmit={this.onSubmit}
-                    onChange={this.onChange}
-                    useLocation={this.useLocation}
-                    searchTerm={this.state.searchTerm}
-                    searchLocation={this.state.searchLocation}
-                    getLocation={this.state.geoLocation}
-                    onMobile={false}
-                    />
-                :   <GeoForm 
-                    name1="searchTerm"
-                    onSubmit={this.onSubmit}
-                    onChange={this.onChange}
-                    useLocation={this.useLocation}
-                    searchTerm={this.state.searchTerm}
-                    searchLocation={this.state.searchLocation}
-                    getLocation={this.state.geoLocation}
-                    />
-              }
+              {
+                  this.state.geoLocation === false
+                  ?   <InputForm
+                      name1="searchTerm" name2="searchLocation"
+                      onSubmit={this.onSubmit}
+                      onChange={this.onChange}
+                      useLocation={this.useLocation}
+                      searchTerm={this.state.searchTerm}
+                      searchLocation={this.state.searchLocation}
+                      getLocation={this.state.geoLocation}
+                      onMobile={false}
+                      />
+                  :   <GeoForm 
+                      name1="searchTerm"
+                      onSubmit={this.onSubmit}
+                      onChange={this.onChange}
+                      useLocation={this.useLocation}
+                      searchTerm={this.state.searchTerm}
+                      searchLocation={this.state.searchLocation}
+                      getLocation={this.state.geoLocation}
+                      />
+                }
             </div>
           )}
         </MediaQuery>

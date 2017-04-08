@@ -16,6 +16,8 @@ Currently and temporarily hosted at http://sereymorm.com/ballot/
 - [Heroku](https://www.heroku.com) used to deploy the reverse proxy
 
 See the repository for the reverse proxy server -> [Here](https://github.com/sMorm/yelpREST)
-
+<p align="center">
+<img src="https://media.giphy.com/media/B5rbUo6GpWFyw/giphy.gif" alt="Mobile/web demo"/>
+</p>
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
