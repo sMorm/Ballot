@@ -1,9 +1,16 @@
+// Dependencies
 import React from 'react';
 import MediaQuery from 'react-media';
 
+// Stylesheets
 import './styles/App.css'
 
-const AppHeader = (props) => {
+/*
+  @Appheader
+  Displays App header, receives no props
+*/
+
+const AppHeader = () => {
     return (
         <div>
             <MediaQuery query="(max-width: 750px)">
