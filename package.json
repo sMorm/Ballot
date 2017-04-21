@@ -9,11 +9,14 @@
     "prop-types": "^15.5.6",
     "react": "^15.4.2",
     "react-animate-on-change": "^0.2.1",
+    "react-burger-menu": "^1.10.14",
     "react-dom": "^15.4.2",
     "react-media": "^1.5.1",
+    "react-motion": "^0.4.7",
     "react-responsive": "^1.2.7",
     "react-router": "^4.0.0",
     "react-spinkit": "^2.1.1",
+    "react-transition-group": "^1.1.1",
     "shuffle-array": "^1.0.1"
   },
   "devDependencies": {

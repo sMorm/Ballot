@@ -13,7 +13,7 @@ import Result from './Results'
 // Stylesheets
 import './styles/App.css';
 
-const baseURL = 'https://ballotyelp.herokuapp.com/yelpsearch/'
+const baseURL = 'http://sample-env.5qpmzezbye.us-east-1.elasticbeanstalk.com/yelpsearch/'
 
 class App extends Component {
   constructor(props){
@@ -166,7 +166,14 @@ class App extends Component {
           : <Result businesses={this.state.businesses} 
                     onDislike={this.onDislike}/>
         }
-        <div className="TempBlock"></div>
+        {
+        // <p>******-DISLIKED-*******</p>
+        // <Result businesses={this.state.disliked}
+        //         onDislike={this.onDislike}/>
+
+        // <div className="TempBlock"></div>
+        }
+
       </div>
     );
   }

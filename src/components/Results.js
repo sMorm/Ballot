@@ -2,11 +2,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import MediaQuery from 'react-media';
+import { Motion, spring } from 'react-motion'
 
 // Stylesheets
 import './styles/Results.css';
 
-
+const preset = {stiffness: 70, damping: 20}
 /*
   @Results
   Functionality: 
@@ -55,29 +56,54 @@ class Results extends Component {
               )
 
             : (
-              <ul key={index} className="App-results">
-              <p className="App-results-name">
-                {business.name}
-              </p>
-                <li>
-                  <a href={business.url} target="_blank" className="App-link">
-                  <img className="picture" src={business.image_url} alt={business.id}/>
-                  </a>
-                  <div className="App-results-address">
-                  <a 
-                    href={`http://maps.google.com/?q=${business.location.display_address[0]}${business.location.display_address[1]}`}
-                    target="_blank">
-                    {business.location.display_address[0]}
-                  </a>
-                  </div>
-                  <p className="App-results-price">
-                    {business.price}
+
+            <Motion 
+            defaultStyle={{x: -40, y: 0}} 
+            style={{x: spring(1, preset), y: spring(1, preset)}}>
+              {value =>{
+                const { x, y } = value;
+                let style = {
+                  opacity: y
+                }
+                let translate = {
+                  transform: `translateY(${x}%)`
+                }
+                return (
+                  <div style={style} className="resultContainer">
+                  <ul key={index} className="App-results" style={translate}>
+                  <p className="App-results-name">
+                    {business.name}
                   </p>
-                </li>
-              <h2 className="App-results-rating">
-                {business.rating} Stars
-              </h2>
-              </ul>
+                    <li>
+                      <a href={business.url} target="_blank" className="App-link">
+                      <img className="picture" src={business.image_url} alt={business.id}/>
+                      </a>
+                      <div className="App-results-address">
+                      <a 
+                        href={`http://maps.google.com/?q=${business.location.display_address[0]}${business.location.display_address[1]}`}
+                        target="_blank">
+                        {business.location.display_address[0]}
+                      </a>
+                      </div>
+                      <p className="App-results-price">
+                        {business.price}
+                      </p>
+                      <button 
+                        className="Dislike"
+                        onClick={() => this.props.onDislike(index)}>
+                      I don't like this 😐
+                      </button>
+                    </li>
+                  <h2 className="App-results-rating">
+                    {business.rating} Stars
+                  </h2>
+                  </ul>
+                  </div>
+                  )
+               }
+              }
+            </Motion>
+
             )
             }
           </MediaQuery>
@@ -85,6 +111,7 @@ class Results extends Component {
         }
         )
     }
+    <div className="tempBlock"/>
     </ul> 
     )   
   }
@@ -96,3 +123,16 @@ Results.propTypes = {
 }
 
 export default Results;
+
+
+
+
+
+
+
+
+
+
+
+
+

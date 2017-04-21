@@ -4,8 +4,13 @@
   margin-top: 50px;
   padding-left: 40px;
   padding-right: 80px;
-  animation: fadein 0.5s forwards;
+
 }
+
+.resultContainer {
+  display: inline;
+}
+
 
 .App-results-mobile{
   display:inline-block;
@@ -31,7 +36,6 @@
   -webkit-box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
   -moz-box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
   box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
-  animation: App-result-down 0.5s forwards;
 }
 
 .App-results-mobile li {
@@ -65,6 +69,19 @@
   width: 280px;
 }
 
+.App-results button {
+  border: none;
+  color: white;
+  background-color: salmon;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+
+/****** MOBILE STYLES ********/
 .App-results-name-mobile {
   color: salmon;
   font-weight: 600;
@@ -113,6 +130,15 @@
   font-size: 30px;
   letter-spacing: 5px;
 }
+/*END OF MOBILE STYLES*/
+
+
+.tempBlock{
+  height: 150px;
+}
+
+
+
 @keyframes App-result-up {
   0% { transform: translateY(0);}
   30% { transform: translateY(5%); }
