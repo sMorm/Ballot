@@ -1,0 +1,53 @@
+.loginContainer {
+  width: 500px;
+  height:350px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 50px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+.loginContainer h1 {
+  padding: 20px;
+  color: salmon;
+}
+.loginContainer form {
+  margin-top: -50px;
+  height: 50px;
+  border: none;
+}
+
+.loginContainer input {
+  display: block;
+  margin: 0px auto;
+  margin-top: 50px;
+  height: 50px;
+  width: 200px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  border-bottom: solid 2px salmon;
+}
+
+.loginContainer p {
+  color: grey;
+  font-size: 14px;
+  padding: 10px;
+  width: 100px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+
+.loginContainer button {
+  margin-top: 20px;
+  border: none;
+  background-color: salmon;
+  color: white;
+  font-weight: 700;
+  padding: 10px 30px;
+  outline: none;
+}
+

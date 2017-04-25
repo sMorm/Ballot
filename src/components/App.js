@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import MediaQuery from 'react-media';
 import axios from 'axios';
+import Typist from 'react-typist'
 
 import shuffle from 'shuffle-array';
 
 // Components
-import AppHeader from './AppHeader'
 import InputForm from './InputForm';
 import GeoForm from './GeoForm'
 import Loading from './Loading'
@@ -115,7 +115,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <AppHeader />
+        <Typist 
+        cursor={{ show: false, }}
+        avgTypingDelay={50}
+        className="App-intro">
+          <p>Start by entering the selection of food and location</p>
+        </Typist>
         <MediaQuery query="(max-width: 750px)">
           {matches => matches
             ? (

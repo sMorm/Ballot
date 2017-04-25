@@ -1,7 +1,7 @@
 // Dependencies
 import React from 'react';
 import MediaQuery from 'react-media';
-
+import { Link } from 'react-router-dom'
 // Stylesheets
 import './styles/App.css'
 
@@ -22,13 +22,16 @@ const AppHeader = () => {
                  </div>
 
                 :<div className="App-header">
-                  <h1>Ballot</h1>
+                  <h1><Link to='/' className='link'>B</Link></h1>
+                  <ul>
+                    <li><Link to='/' className='link'>Home</Link></li>             
+                    <li><Link to='/team' className='link'>Team</Link></li>
+                    <li><Link to='/about' className='link'>About</Link></li>
+                    <li><Link to='/login' className='link'>Login</Link></li>
+                  </ul>
                  </div>
               }
             </MediaQuery>
-            <div className="App-intro">
-              <p>To get started, enter the type of food and your location</p>
-            </div>
         </div>
     );
 }
