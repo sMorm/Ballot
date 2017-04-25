@@ -15,28 +15,28 @@ const Team = () => {
           <div className='profile'>
             <a href="http://github.com/smorm" target="_blank">
               <img src={serey} alt='serey'/>
-              <h2>Serey</h2>
+              <h1>Serey</h1>
             </a>
           </div>
 
           <div className='profile'>
             <a href="https://github.com/Liqueseous" target="_blank">
               <img src={ryan} alt='ryan'/>
-              <h2>Ryan</h2>
+              <h1>Ryan</h1>
             </a>
           </div>
 
           <div className='profile'>
             <a href="https://github.com/BrandonKarl" target="_blank">
               <img src={brandon} alt='brandon'/>
-              <h2>Brandon</h2>
+              <h1>Brandon</h1>
             </a>
           </div>
 
           <div className='profile'>
             <a href="https://github.com/Melendeze13" target="_blank">
               <img src={elmer} alt='elmer'/>
-              <h2>Elmer</h2>
+              <h1>Elmer</h1>
             </a>
           </div>
 

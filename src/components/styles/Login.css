@@ -1,5 +1,6 @@
 .loginContainer {
-  width: 500px;
+  width: 95%;
+  max-width: 500px;
   height:350px;
   background-color: white;
   margin: 0 auto;
@@ -17,6 +18,7 @@
   margin-top: -50px;
   height: 50px;
   border: none;
+  animation: turn 0.2s forwards;
 }
 
 .loginContainer input {
@@ -51,3 +53,7 @@
   outline: none;
 }
 
+@keyframes turn {
+  from {transform: rotateY(180deg); opacity: 0;}
+  to {transform:rotateY(0deg); opacity: 1;}
+}

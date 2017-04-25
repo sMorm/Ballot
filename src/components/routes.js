@@ -20,11 +20,11 @@ const Routes = (props) => {
       <div className="App">
         <AppHeader />
           <Switch>
-            <Route exact path="/" component={ App } />
-            <Route path='/team' component={ Team } />
-            <Route path='/about' component={ About } />
-            <Route path='/login' component={ Login } />
-            <Route path="*" component={ NotFound }/> 
+            <Route exact path="/ballot" component={ App } />
+            <Route path='/ballot/team' component={ Team } />
+            <Route path='/ballot/about' component={ About } />
+            <Route path='/ballot/login' component={ Login } />
+            <Route path="/ballot/*" component={ NotFound }/> 
           </Switch>
       </div>
     </Router>

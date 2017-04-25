@@ -42,14 +42,23 @@ body {
 }
 .App-header-mobile {
   background-color: salmon;
-  height: 20px;
+  height: 30px;
   padding: 10px;
   color: white;
 }
 .App-header-mobile h1{
   text-align: left;
   font-size: 25px;
-  margin-top: -4px;
+  margin-top: 0px;
+}
+
+.App-header-mobile ul {
+  margin-top: -40px;
+  text-align: right;
+}
+.App-header-mobile li {
+  display: inline;
+  margin: 0px 20px;
 }
 
 .App-header-mobile a{

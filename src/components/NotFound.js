@@ -3,7 +3,7 @@ import React from 'react';
 const NotFound = () => {
         return (
             <div>
-                afdsafsdfasdfsad
+                Click on home
             </div>
         );
 }

@@ -1,0 +1,14 @@
+.aboutContainer h1 {
+  color: #555555;
+}
+
+.aboutParagraph {
+  width: 80%;
+  max-width: 700px;
+  text-align: left;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  margin: 0 auto;
+  line-height: 40px;
+  color: #888888;
+}

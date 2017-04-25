@@ -12,49 +12,29 @@
 }
 
 
-.App-results-mobile{
-  display:inline-block;
-  margin-top: 20px;
-  margin-right: 40px;
-  padding: 0px 10px;
-  list-style-type: none;
-}
-
-/*.App-results li:hover {
-  animation: App-result-up 0.5s forwards;
-}
-.App-results-mobile li:hover {
-  animation: App-result-up 0.5s forwards;
-}
-*/
-.App-results li {
-  transform: translate(0%);
-  height: 250px;
-  width: 200px;
-  background-color: white;
-  padding: 40px;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-  animation: App-result-down 0.5s forwards;
-}
-
-.App-results-mobile li {
-  height: 200px;
-  width: 150px;
-  background-color: white;
-  padding: 30px;
-  -webkit-box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
-  -moz-box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
-  box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
-  animation: App-result-down 0.5s forwards;
-}
-
 .App-results img {
-  height: 100px;
+  margin-top: -15px;
+  height: 120px;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+.App-results-address {
+  letter-spacing: 1px;
+}
+
+.App-results-address a {
+  text-decoration: none;
+  color: salmon;
+}
+
+.App-results-price {
+  color: salmon;
+  margin: 10px 0px;
+  font-size: 60px;
+  font-weight: 200;
+  border: solid;
 }
 
 .picture:hover {
@@ -83,28 +63,51 @@
 
 
 /****** MOBILE STYLES ********/
+.App-results-mobile{
+  display:inline-block;
+  margin-top: 20px;
+  margin-right: 40px;
+  padding: 0px 10px;
+  list-style-type: none;
+}
+
+/*.App-results li:hover {
+  animation: App-result-up 0.5s forwards;
+}
+.App-results-mobile li:hover {
+  animation: App-result-up 0.5s forwards;
+}
+*/
+.App-results li {
+  transform: translate(0%);
+  height: 250px;
+  width: 200px;
+  background-color: white;
+  padding: 40px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+
+}
+
+.App-results-mobile li {
+  height: 200px;
+  width: 150px;
+  background-color: white;
+  padding: 30px;
+  -webkit-box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
+  box-shadow: 0px 15px 21px 1px rgba(0,0,0,0.05);
+  animation: App-result-down 0.5s forwards;
+}
+
+
 .App-results-name-mobile {
   color: salmon;
   font-weight: 600;
   letter-spacing: 2px;
   text-align: center;
   width: 215px;
-}
-
-.App-results-address {
-  letter-spacing: 1px;
-}
-
-.App-results-address a {
-  text-decoration: none;
-  color: salmon;
-}
-
-.App-results-price {
-  color: salmon;
-  margin: 0px 0px;
-  font-size: 70px;
-  font-weight: 200;
 }
 
 .App-results-price-mobile {

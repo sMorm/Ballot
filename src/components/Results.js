@@ -7,7 +7,7 @@ import { Motion, spring } from 'react-motion'
 // Stylesheets
 import './styles/Results.css';
 
-const preset = {stiffness: 70, damping: 20}
+const preset = {stiffness: 100, damping: 15}
 /*
   @Results
   Functionality: 
@@ -58,7 +58,7 @@ class Results extends Component {
             : (
 
             <Motion 
-            defaultStyle={{x: -40, y: 0}} 
+            defaultStyle={{x: 0, y: 0}} 
             style={{x: spring(1, preset), y: spring(1, preset)}}>
               {value =>{
                 const { x, y } = value;
@@ -66,7 +66,8 @@ class Results extends Component {
                   opacity: y
                 }
                 let translate = {
-                  transform: `translateY(${x}%)`
+                  transform: `scale(${x})`,
+                  opacity: y
                 }
                 return (
                   <div style={style} className="resultContainer">

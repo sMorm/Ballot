@@ -18,16 +18,21 @@ const AppHeader = () => {
 
                 ?<div className="App-header-mobile">
                   <h1>B</h1>
-                  <p><a href="http://github.com/team-ballot/ballot-web" target="_blank">See Github</a></p>
+                  <ul>
+                    <li><Link to='/ballot' className='link'>Home</Link></li>             
+                    <li><Link to='/ballot/team' className='link'>Team</Link></li>
+                    <li><Link to='/ballot/about' className='link'>About</Link></li>
+                    <li><Link to='/ballot/login' className='link'>Login</Link></li>
+                  </ul>
                  </div>
 
                 :<div className="App-header">
-                  <h1><Link to='/' className='link'>B</Link></h1>
+                  <h1><Link to='/ballot' className='link'>B</Link></h1>
                   <ul>
-                    <li><Link to='/' className='link'>Home</Link></li>             
-                    <li><Link to='/team' className='link'>Team</Link></li>
-                    <li><Link to='/about' className='link'>About</Link></li>
-                    <li><Link to='/login' className='link'>Login</Link></li>
+                    <li><Link to='/ballot' className='link'>Home</Link></li>             
+                    <li><Link to='/ballot/team' className='link'>Team</Link></li>
+                    <li><Link to='/ballot/about' className='link'>About</Link></li>
+                    <li><Link to='/ballot/login' className='link'>Login</Link></li>
                   </ul>
                  </div>
               }

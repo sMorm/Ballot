@@ -13,7 +13,7 @@ const LoginForm = (props) => {
         required/>
 
         <input 
-        type='text'
+        type='password'
         name='password'
         placeholder='Password' 
         onChange={props.onChange}

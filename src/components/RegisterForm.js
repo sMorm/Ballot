@@ -8,12 +8,12 @@ const RegisterForm = (props) => {
         <input 
         type='text' 
         name='username' 
-        placeholder='Username'
+        placeholder='E-Mail'
         onChange={props.onChange}
         required/>
 
         <input 
-        type='text'
+        type='password'
         name='password'
         placeholder='Password' 
         onChange={props.onChange}

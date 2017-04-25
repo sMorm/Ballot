@@ -2,7 +2,7 @@
   "name": "es6ballot",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "http://sereymorm.com/ballot/",
   "dependencies": {
     "axios": "^0.16.0",
     "better-react-spinkit": "^2.0.0-6",
