@@ -2,8 +2,12 @@
 import React from 'react';
 import MediaQuery from 'react-media';
 import { Link } from 'react-router-dom'
+
 // Stylesheets
 import './styles/App.css'
+
+// Media
+import Logo from '../assets/ballot-logo.svg'
 
 /*
   @Appheader
@@ -20,21 +24,22 @@ const AppHeader = () => {
                   <h1>B</h1>
                   <ul>
                     <li><Link to='/ballot' className='link'>Home</Link></li>             
-                    <li><Link to='/ballot/team' className='link'>Team</Link></li>
                     <li><Link to='/ballot/about' className='link'>About</Link></li>
                     <li><Link to='/ballot/login' className='link'>Login</Link></li>
                   </ul>
                  </div>
 
-                :<div className="App-header">
-                  <h1><Link to='/ballot' className='link'>B</Link></h1>
+                :<div>
+                <div className="App-header">
+                  <Link to='/ballot' className='link'><img src={Logo} alt='Logo'/></Link>
                   <ul>
                     <li><Link to='/ballot' className='link'>Home</Link></li>             
-                    <li><Link to='/ballot/team' className='link'>Team</Link></li>
                     <li><Link to='/ballot/about' className='link'>About</Link></li>
                     <li><Link to='/ballot/login' className='link'>Login</Link></li>
                   </ul>
                  </div>
+
+                </div>
               }
             </MediaQuery>
         </div>

@@ -8,7 +8,7 @@ const Form = (props) => {
             <form onSubmit={props.onSubmit} autoComplete="off">
                 <input 
                   name={props.name1}
-                  className="Form-input" 
+                  className="Form-input left" 
                   type="text"
                   placeholder="Term"
                   onChange={props.onChange}
@@ -17,7 +17,7 @@ const Form = (props) => {
                 </input>
                 <input 
                   name={props.name2}
-                  className="Form-input" 
+                  className="Form-input right" 
                   type="text"
                   placeholder="Location"
                   onChange={props.onChange}
